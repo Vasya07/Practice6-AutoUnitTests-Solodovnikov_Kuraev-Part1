@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Bank/Bank.csproj" Id="5eca5f37-83d1-48e3-85ed-26ebfcb2e44c" />
+  <Project Path="BankTests/BankTests.csproj" Id="2a3dfab6-d4e5-4227-a14e-4af4ad248e47" />
+</Solution>
