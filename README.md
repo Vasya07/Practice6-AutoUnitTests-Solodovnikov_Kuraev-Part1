@@ -11,9 +11,9 @@
 
 ### 1. Создание проекта `Bank` и класса `BankAccount`
 Был создан проект консольного приложения `Bank`. В файл `BankAccount.cs` добавлен код класса `BankAccount` с методами `Debit` и `Credit`. В исходном коде метода `Debit` была преднамеренно допущена ошибка (сложение вместо вычитания).
+<img width="1013" height="512" alt="Сорян, фотка осталась за бортом" src="https://github.com/user-attachments/assets/12e2d2c9-54a4-42c6-9e17-36ed1a63883f" />
 
 **Результат запуска консольного приложения с ошибкой:**
-<img width="1013" height="512" alt="Сорян, фотка осталась за бортом :(" src="https://github.com/user-attachments/assets/37c3bfa4-d2d5-4e50-8955-bda19cd0cc8d" />
 
 ### 2. Создание проекта модульных тестов `BankTests`
 Был создан второй проект `BankTests`. В него добавлена ссылка на основной проект `Bank`. Тестовый класс переименован в `BankAccountTests`.
@@ -22,14 +22,14 @@
 Был написан тест `Debit_WithValidAmount_UpdatesBalance`.
 
 **Результат первого запуска теста (до исправления ошибки):**
-<img width="1920" height="850" alt="Сорян, фотка осталась за бортом :(" src="https://github.com/user-attachments/assets/4833584d-c36d-423a-96a0-12d4c81e6a81" />
+<img width="1920" height="850" alt="Сорян, фотка осталась за бортом" src="https://github.com/user-attachments/assets/2af4b6f0-bda6-4ef9-b5b4-40c51d0f173b" />
 
 **Анализ ошибки:** Тест упал, так как ожидал уменьшения баланса, но метод `Debit` его увеличивал. Это подтвердило наличие логической ошибки в коде.
 
 **Исправление:** В методе `Debit` строка `m_balance += amount;` была заменена на `m_balance -= amount;`.
 
 **Результат повторного запуска теста:**
-<img width="1029" height="207" alt="Сорян, фотка осталась за бортом :(" src="https://github.com/user-attachments/assets/a78f8711-bb28-4985-89b6-7b7c14665fb8" />
+<img width="1029" height="207" alt="Сорян, фотка осталась за бортом" src="https://github.com/user-attachments/assets/8084bd46-085f-4f4c-982d-7f40b13b565e" />
 
 ### 4. Добавление тестов для граничных условий `Debit`
 Были добавлены тесты для проверки выброса исключений:
@@ -50,7 +50,7 @@
 *   `Credit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange` - проверяет реакцию на отрицательную сумму.
 
 **Итоговый результат выполнения всех модульных тестов:**
-<img width="1725" height="266" alt="All5Success" src="https://github.com/user-attachments/assets/37e68c3c-8550-4bce-8ce9-3a0122d7e679" />
+<img width="1725" height="266" alt="Сорян, фотка осталась за бортом" src="https://github.com/user-attachments/assets/ab5bffcd-0dd4-4262-a858-a61986fa1cb1" />
 
 ## Вывод
 В ходе выполнения практической работы было проведено модульное тестирование класса `BankAccount`.
